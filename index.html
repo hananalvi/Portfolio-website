@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanan's Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .container {
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px;
+    }
+
+    .content {
+      display: flex;
+      gap: 60px;
+      margin-top: 60px;
+      align-items: center;
+    }
+
+    .profile-pic img {
+      border-radius: 12px;
+      width: 350px;
+      height: 400px;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .text-box {
+      width: 500px;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      color: #000000;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    } 
+
+    .text-box h1 {
+      color: #0a8e15;
+    }
+
+    .quote {
+      color: #12de2a;
+      font-style: italic;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials .btn {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="btn">Home</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="skills.html" class="btn">Skills</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <div class="profile-pic">
+        <img src="profile pic.png" alt="My Pic">
+      </div>
+      <div class="text-box">
+        <h1>Hi, I am HANAN RAFIQUE.</h1>
+        <p><strong>
+          I am a student of Computer Science with a strong interest in
+          technology, problem-solving, and innovation. My academic journey
+          has equipped me with foundational knowledge in programming,
+          algorithms, data structures, and software development. I am
+          passionate about learning how computers work and how they can be used
+          to solve real-world problems. As I continue to grow in this field,
+          I am eager to apply my skills in practical settings, contribute
+          to meaningful projects, and stay updated with emerging technologies.
+        </p></strong>
+        <span class="quote">“To keep going on and standing tall everyday is the ultimate life,
+          the struggle never stops. As the Gladiator says, ‘There's always
+          someone left to fight.’”</span>
+
+        <div class="socials">
+          <a href="https://instagram.com/hananalviii" class="btn">Instagram</a>
+          <a href="https://linkedin.com/in/No Name" class="btn">LinkedIn</a>
+          <a href="https://twitter.com/AlviiiHanan" class="btn">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

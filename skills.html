@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+        width: 900px;
+        border-collapse: collapse;
+      }
+  
+      th, td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      thead th {
+        background-color: #4CAF50;
+        color: white;
+      }
+  
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2; 
+      }
+      nav {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="btn">Home</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="skills.html" class="btn">Skills</a>
+  </nav>
+  <div style="background-image: url(skillsbg.jpg);display: flex;flex-direction: column;background-size: cover;justify-content: center;align-items: center;min-height: 100px;">
+   <div style="font-size: larger;"> <H2>Skills</H2>
+    <ul>1. Good Grip on Basics of programming</ul>
+    <ul>2. Data Structures and Algorithm Designing</ul>
+    <ul>3. Java FrameWork Knowledge</ul>
+    <h2>List Of Hobbies</h2>
+    <ol>1. Table Tennis<br> 2. Reviewing Movies on IMDB<br>3. Explore New Works done using platforms like GitHub</ol>
+    <h2>Education & Certificates</h2>
+    <h4>FSC From Punjab Group of colleges<br>Currently Enrolled in BSCS in NFCIET</h4>
+    <h2 style="text-align: center;">My Educational Background</h2></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Degree</th>
+        <th>Institute</th>
+        <th>Year</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Matric</td>
+        <td>Muslim Public HSS</td>
+        <td>2019</td>
+        <td>1001</td>
+      </tr>
+      <tr>
+        <td>Intermediate</td>
+        <td>PGC</td>
+        <td>2021</td>
+        <td>923</td>
+      </tr>
+      <tr>
+        <td>BSCS</td>
+        <td>NFC IET</td>
+        <td>2023-Present</td>
+        <td>Currently Enrolled</td>
+      </tr>
+    </tbody>
+  </table>
+    <div style="text-align: center;">
+        <h2>Certificate</h2>
+    <img src="Certificate.png"width="500" height="350" alt="Cerificate 1"><div>
+    <div style="text-align: center;">
+        <h2>Certificate</h2>
+    <img src="Certificate 2.jpg"width="500" height="350" alt="No Pic"></div>
+  </div>    
+</body>
+</html>

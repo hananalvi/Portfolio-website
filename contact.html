@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <style>
+    nav {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .main-container {
+      background-image: url(contactbg.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+      padding: 10px;
+    }
+
+    .contact-box {
+      text-align: center;
+      width: 500px;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      color: #000000;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <a href="index.html" class="btn">Home</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="skills.html" class="btn">Skills</a>
+  </nav>
+
+  <div class="main-container">
+    <div class="contact-box">
+      <h2>Contact Form</h2>
+      <br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Submit</button>
+
+      <br><br>
+      <address>
+        You can also reach me at:<br>
+        DIP N BITE Mumtazabad<br>
+        Email: salmanhanan21@gmail.com<br>
+        Phone: 0319-8864179
+      </address>
+    </div>
+  </div>
+
+</body>
+</html>
