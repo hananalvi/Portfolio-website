@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hanan's Website</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
   <style>
     body {
       margin: 0;
@@ -59,18 +60,27 @@
       margin-top: 60px;
       align-items: center;
     }
+    @media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
 
     .profile-pic img {
       border-radius: 12px;
-      width: 350px;
-      height: 400px;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
       object-fit: cover;
       box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
 
     .text-box {
-      width: 500px;
-      padding: 40px;
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(12px);
@@ -98,6 +108,14 @@
       font-size: 14px;
       padding: 8px 18px;
     }
+    @media (max-width: 480px) {
+    .text-box h1 {
+      font-size: 1.2rem;
+    }
+    .quote {
+      font-size: 0.9rem;
+    }
+  }
   </style>
 </head>
 <body>
